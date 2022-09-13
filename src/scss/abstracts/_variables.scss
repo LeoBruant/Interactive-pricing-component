@@ -1,0 +1,55 @@
+// Breakpoints
+
+$bp-mobile: 375px;
+$bp-tablet: 576px;
+$bp-laptop: 992px;
+$bp-desktop: 1440px;
+
+// Colors
+
+$primary-light: hsl(174, 77%, 80%);
+$primary-dark: hsl(174, 86%, 45%);
+$secondary-light: hsl(14, 92%, 95%);
+$secondary-dark: hsl(15, 100%, 70%);
+
+$white: hsl(0, 0%, 100%);
+$neutral-100: hsl(230, 100%, 99%);
+$neutral-200: hsl(224, 65%, 95%);
+$neutral-300: hsl(223, 50%, 87%);
+$neutral-400: hsl(226, 100%, 87%);
+$neutral-500: hsl(225, 20%, 60%);
+$neutral-900: hsl(227, 35%, 25%);
+
+// Typography
+
+$fs-100: rem(9.75);
+$fs-200: rem(10);
+$fs-300: rem(11.75);
+$fs-350: rem(12.75);
+$fs-400: rem(13);
+$fs-450: rem(13.75);
+$fs-500: rem(15);
+$fs-600: rem(20.25);
+$fs-700: rem(28);
+$fs-800: rem(31.5);
+$fs-900: rem(39);
+
+$fw-normal: 600;
+$fw-bold: 800;
+
+$text-dark: $neutral-900;
+$text-medium: $neutral-500;
+$text-light: $neutral-400;
+
+// Sizing
+
+$sz-100: em(5);
+$sz-150: em(10);
+$sz-200: em(15);
+$sz-300: em(20);
+$sz-400: em(28);
+$sz-500: em(30);
+$sz-600: em(40);
+$sz-700: em(50);
+$sz-800: em(56);
+$sz-900: em(65);

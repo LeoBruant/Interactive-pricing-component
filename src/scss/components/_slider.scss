@@ -1,0 +1,46 @@
+.body--grab {
+  cursor: grab;
+}
+
+.slider {
+  position: relative;
+
+  &__background {
+    background-color: $neutral-200;
+    border-radius: 100vmax;
+    cursor: pointer;
+    height: $sz-150;
+  }
+
+  &__fill {
+    background-color: $primary-light;
+    border-radius: 100vmax;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  &__cursor {
+    aspect-ratio: 1;
+    align-items: center;
+    background-color: $primary-dark;
+    border-radius: 50%;
+    box-shadow: 0 $sz-300 $sz-400 $sz-100 rgb($primary-light, 0.75);
+    cursor: pointer;
+    display: flex;
+    height: $sz-700;
+    padding-inline: $sz-150;
+    position: absolute;
+    top: 50%;
+    translate: -50% -50%;
+
+    &--grab {
+      cursor: grab;
+    }
+  }
+
+  &__icon {
+    user-select: none;
+    pointer-events: none;
+    width: 100%;
+  }
+}

@@ -1,0 +1,26 @@
+.switch {
+  aspect-ratio: 2;
+  border-radius: 100vmax;
+  cursor: pointer;
+  height: $sz-400;
+  padding: $sz-100;
+  transition-duration: 0.125s;
+  background-color: $neutral-300;
+
+  &.active {
+    background-color: $primary-dark;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &:not(.active):hover {
+    background-color: $primary-light;
+  }
+
+  &__circle {
+    aspect-ratio: 1;
+    background-color: $white;
+    border-radius: 50%;
+    height: 100%;
+  }
+}

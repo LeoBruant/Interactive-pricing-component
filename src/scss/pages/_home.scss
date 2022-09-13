@@ -1,0 +1,204 @@
+#home {
+  background-color: $neutral-100;
+
+  .container {
+    background-image: url("../../assets/svg/bg-pattern.svg");
+    background-position-y: -3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: $sz-600;
+    justify-content: center;
+    padding-inline: $sz-500;
+    min-height: 100vh;
+  }
+
+  .header {
+    background-image: url("../../assets/svg/pattern-circles.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-block: $sz-600;
+
+    &__title {
+      color: $text-dark;
+      font-size: $fs-600;
+      font-weight: $fw-bold;
+      line-height: 2.25;
+      text-align: center;
+
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+
+    &__description {
+      line-height: 1.75;
+      margin-inline: auto;
+      max-width: 22ch;
+      text-align: center;
+    }
+  }
+
+  .card {
+    &__header {
+      display: grid;
+      gap: $sz-700;
+      grid-template-areas:
+        "title"
+        "slider"
+        "price-container"
+        "choice";
+    }
+
+    &__footer {
+      display: grid;
+      gap: $sz-600;
+    }
+
+    &__title {
+      font-size: $fs-300;
+      font-weight: $fw-bold;
+      grid-area: title;
+      letter-spacing: 0.25ch;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &__slider {
+      grid-area: slider;
+    }
+
+    &__price-container {
+      align-items: center;
+      display: flex;
+      gap: 1ch;
+      grid-area: price-container;
+      justify-content: center;
+    }
+
+    &__price {
+      color: $text-dark;
+      font-size: $fs-800;
+      font-weight: $fw-bold;
+    }
+
+    &__choice {
+      align-items: center;
+      display: flex;
+      font-size: $fs-300;
+      gap: $sz-300;
+      grid-area: choice;
+      justify-content: center;
+      text-transform: capitalize;
+    }
+
+    &__pros {
+      font-size: $fs-300;
+      line-height: 2;
+    }
+
+    &__pro {
+      align-items: center;
+      display: flex;
+      gap: $sz-300;
+      justify-content: center;
+    }
+
+    &__button {
+      display: block;
+      margin-inline: auto;
+    }
+  }
+
+  .discount {
+    background-color: $secondary-light;
+    border-radius: 100vmax;
+    color: $secondary-dark;
+    font-size: $fs-200;
+    font-weight: $fw-bold;
+    margin-top: calc($sz-100/2 * -1);
+    margin-left: 1ch;
+    padding: $sz-100 1ch;
+    position: absolute;
+
+    &__text {
+      display: none;
+      text-transform: none;
+    }
+  }
+
+  @include media("sm") {
+    .header {
+      &__title {
+        font-size: $fs-700;
+      }
+
+      &__description {
+        font-size: $fs-500;
+        max-width: unset;
+      }
+    }
+
+    .container {
+      gap: $sz-900;
+    }
+
+    .card {
+      margin-inline: auto;
+      width: em(665);
+
+      &__header {
+        align-items: center;
+        grid-template-areas:
+          "title price-container"
+          "slider slider"
+          "choice choice";
+        justify-content: space-between;
+      }
+
+      &__footer {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__title {
+        font-size: $fs-450;
+      }
+
+      &__price {
+        font-size: $fs-900;
+      }
+
+      &__by-month {
+        font-size: $fs-500;
+      }
+
+      &__pros {
+        font-size: $fs-300;
+      }
+
+      &__pro {
+        justify-content: left;
+      }
+
+      &__button {
+        font-size: $fs-350;
+        margin-inline: 0;
+      }
+    }
+
+    .discount {
+      font-size: $fs-100;
+
+      &__sign {
+        display: none;
+      }
+
+      &__text {
+        display: unset;
+      }
+    }
+  }
+}

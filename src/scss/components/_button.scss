@@ -1,0 +1,16 @@
+.button {
+  background-color: $neutral-900;
+  border-radius: 100vmax;
+  color: $neutral-500;
+  cursor: pointer;
+  padding: $sz-200 $sz-800;
+  text-align: center;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    color: $white;
+  }
+}

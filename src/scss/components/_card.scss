@@ -1,0 +1,31 @@
+.card {
+  background-color: $white;
+  border-radius: $sz-150;
+  box-shadow: 0 $sz-300 $sz-400 $neutral-200;
+
+  &__header {
+    padding: $sz-600 $sz-500;
+  }
+
+  &__footer {
+    padding-block: $sz-400 $sz-600;
+    padding-inline: $sz-500;
+  }
+
+  &__separator {
+    height: 1px;
+    background-color: $neutral-200;
+  }
+}
+
+@include media("sm") {
+  .card {
+    &__header {
+      padding: $sz-700 $sz-800;
+    }
+
+    &__footer {
+      padding: $sz-600 $sz-800;
+    }
+  }
+}
