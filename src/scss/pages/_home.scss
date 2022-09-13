@@ -3,9 +3,8 @@
 
   .container {
     background-image: url("../../assets/svg/bg-pattern.svg");
-    background-position-y: -3rem;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: fill;
     display: flex;
     flex-direction: column;
     gap: $sz-600;
@@ -141,6 +140,7 @@
     }
 
     .container {
+      background-size: contain;
       gap: $sz-900;
     }
 
